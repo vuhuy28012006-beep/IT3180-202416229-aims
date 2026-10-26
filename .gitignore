@@ -1,4 +1,16 @@
+#python
 _pycache_/
+*.py[cod]
 .venv/
+venv/
+
+#IDE / Hệ điều hành
 .vscode/
-*.pyc
+.idea/
+.DS_Store
+Thumbs.db
+
+#sản phẩm build/ đóng gói
+dist/
+build/
+*.zip

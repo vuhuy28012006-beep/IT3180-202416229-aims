@@ -4,3 +4,4 @@
 
 - Sinh viên: Vũ Nhật Huy – MSSV 202416229
 - Chạy chương trình: `python main.py`
+- Mục tiêu: hoàn thành các lab1,2,3,4,5 và làm quen với git

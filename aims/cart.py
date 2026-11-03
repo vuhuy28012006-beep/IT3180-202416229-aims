@@ -1,5 +1,6 @@
-
 from aims.dvd import DigitalVideoDisc
+
+MAX_NUMBERS_ORDERED = 20
 
 
 class Cart:
@@ -7,7 +8,10 @@ class Cart:
         self.items = []
 
     def add_dvd(self, dvd):
+        if len(self.items) >= MAX_NUMBERS_ORDERED:
+            return False
         self.items.append(dvd)
+        return True
 
     def total_cost(self):
         return sum(dvd.cost for dvd in self.items)

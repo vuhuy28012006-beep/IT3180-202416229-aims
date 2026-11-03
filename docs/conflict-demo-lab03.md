@@ -1,1 +1,1 @@
-DVD was added to the cart.
+Đã thêm đĩa vào giỏ hàng.

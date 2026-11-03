@@ -23,6 +23,16 @@ class CartLimitTests(unittest.TestCase):
 
         self.assertEqual(len(cart.items), 20)
 
+    def test_empty_cart_total_cost_is_zero(self):
+        self.assertEqual(Cart().total_cost(), 0)
+
+    def test_total_cost_sums_all_dvds(self):
+        cart = Cart()
+        cart.add_dvd(DigitalVideoDisc("DVD A", 10.50))
+        cart.add_dvd(DigitalVideoDisc("DVD B", 4.25))
+
+        self.assertAlmostEqual(cart.total_cost(), 14.75)
+
 
 if __name__ == "__main__":
     unittest.main()

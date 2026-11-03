@@ -1,1 +1,1 @@
-Đã thêm đĩa vào giỏ hàng.
+Đã thêm đĩa 'The Lion King' vào giỏ hàng.

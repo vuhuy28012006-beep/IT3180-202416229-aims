@@ -1,1 +1,1 @@
-The disc 'The Lion King' has been added.
+Đã thêm đĩa 'The Lion King' vào giỏ hàng.

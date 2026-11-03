@@ -1,1 +1,1 @@
-DVD was added to the cart.
+The disc 'The Lion King' has been added.

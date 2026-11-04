@@ -8,6 +8,11 @@
 - Add DigitalVideoDisc.category.
 - Add search_by_category().
 
+## [1.0.1] - 2026-11-04
+
+### Fixed
+- Make title search handle Unicode case folding (#21).
+
 ## [1.0.0]-2026-11-04
 
 ### Added

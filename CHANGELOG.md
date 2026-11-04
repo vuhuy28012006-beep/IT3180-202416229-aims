@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-04
+
+### Fixed
+- Use Unicode case folding for case-insensitive title search.
+
 ## [1.0.0]
 
 ### Added

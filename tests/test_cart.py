@@ -32,6 +32,34 @@ class CartLimitTests(unittest.TestCase):
         cart.add_dvd(DigitalVideoDisc("DVD B", 4.25))
 
         self.assertAlmostEqual(cart.total_cost(), 14.75)
+    def test_sort_by_title(self):
+        cart = Cart()
+
+        cart.add_dvd(DigitalVideoDisc("Spider-Man", 20.0))
+        cart.add_dvd(DigitalVideoDisc("Avatar", 15.0))
+        cart.add_dvd(DigitalVideoDisc("Harry Potter", 10.0))
+
+        cart.sort_by_title()
+
+        titles = [dvd.title for dvd in cart.items]
+
+        self.assertEqual(
+            titles,
+            ["Avatar", "Harry Potter", "Spider-Man"]
+        )
+
+    def test_sort_by_cost(self):
+        cart = Cart()
+
+        cart.add_dvd(DigitalVideoDisc("DVD A", 20.0))
+        cart.add_dvd(DigitalVideoDisc("DVD B", 10.0))
+        cart.add_dvd(DigitalVideoDisc("DVD C", 15.0))
+
+        cart.sort_by_cost()
+
+        costs = [dvd.cost for dvd in cart.items]
+
+        self.assertEqual(costs, [10.0, 15.0, 20.0])
 
 
 if __name__ == "__main__":

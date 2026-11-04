@@ -30,3 +30,10 @@ class Cart:
 
         # Hiển thị tổng tiền
         print(f"Total cost: {self.total_cost():.2f} $")
+    def sort_by_title(self):
+        """Sort DVDs by title in ascending alphabetical order."""
+        self.items.sort(key=lambda dvd: dvd.title.lower())
+
+    def sort_by_cost(self):
+        """Sort DVDs by cost in ascending order."""
+        self.items.sort(key=lambda dvd: dvd.cost)

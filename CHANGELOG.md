@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## [1.0.0]
+## [1.0.0]-2026-11-04
 
 ### Added
 - Add Cart.print_cart().

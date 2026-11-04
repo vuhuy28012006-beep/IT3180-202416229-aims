@@ -7,4 +7,4 @@ cart.add_dvd(DigitalVideoDisc("DVD 2", 43.89))
 
 print(f"Total cost: {cart.total_cost():.2f} $")
 cart.print_cart()
-print("AIMS-mini v1.0.0")
+print("AIMS-mini v1.1.0")
